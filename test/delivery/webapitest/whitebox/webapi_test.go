@@ -19,7 +19,6 @@ import (
 	"github.com/dc0d/bank_account_kata_go/delivery/webapi"
 
 	"github.com/dc0d/bank_account_kata_go/test/delivery/webapispec"
-	"github.com/dc0d/bank_account_kata_go/test/doubles"
 	"github.com/dc0d/bank_account_kata_go/test/support"
 
 	"github.com/labstack/echo/v4"
@@ -53,7 +52,7 @@ type httpAPICaller struct {
 	printBankStatementAction         *PrintBankStatementActionSpy
 }
 
-func httpAPICallerFactory(...bool) doubles.HTTPAPICaller {
+func httpAPICallerFactory(...bool) support.HTTPAPICaller {
 	res := &httpAPICaller{}
 
 	return res

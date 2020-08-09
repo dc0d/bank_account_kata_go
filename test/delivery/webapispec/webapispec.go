@@ -9,17 +9,16 @@ import (
 	"github.com/dc0d/bank_account_kata_go/core/model/account"
 	"github.com/dc0d/bank_account_kata_go/delivery/webapi"
 
-	"github.com/dc0d/bank_account_kata_go/test/doubles"
 	"github.com/dc0d/bank_account_kata_go/test/support"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
 
-func WebAPISuite(callerFactory func(stateFull ...bool) doubles.HTTPAPICaller) {
+func WebAPISuite(callerFactory func(stateFull ...bool) support.HTTPAPICaller) {
 	Describe("Deposit Action", func() {
 		var (
-			caller doubles.HTTPAPICaller
+			caller support.HTTPAPICaller
 
 			actualHTTPCallResponse string
 			actualHTTPCallStatus   int
@@ -67,7 +66,7 @@ func WebAPISuite(callerFactory func(stateFull ...bool) doubles.HTTPAPICaller) {
 
 	Describe("Withdrawal Action", func() {
 		var (
-			caller doubles.HTTPAPICaller
+			caller support.HTTPAPICaller
 
 			actualHTTPCallResponse string
 			actualHTTPCallStatus   int
@@ -127,7 +126,7 @@ func WebAPISuite(callerFactory func(stateFull ...bool) doubles.HTTPAPICaller) {
 
 		It("Given a client makes a deposit of 1000 on 10-01-2012", func() {
 			var (
-				caller doubles.HTTPAPICaller
+				caller support.HTTPAPICaller
 
 				actualHTTPCallResponse string
 				actualHTTPCallStatus   int

@@ -1,4 +1,4 @@
-package doubles
+package support
 
 type HTTPAPICaller interface {
 	Post(path string, payload interface{}) (response string, httpStatus int, err error)

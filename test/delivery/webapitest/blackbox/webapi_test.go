@@ -21,7 +21,7 @@ import (
 	"github.com/dc0d/bank_account_kata_go/delivery/webapi"
 
 	"github.com/dc0d/bank_account_kata_go/test/delivery/webapispec"
-	"github.com/dc0d/bank_account_kata_go/test/doubles"
+	"github.com/dc0d/bank_account_kata_go/test/support"
 
 	"github.com/labstack/echo/v4"
 
@@ -57,7 +57,7 @@ type httpAPICaller struct {
 	stateFull bool
 }
 
-func httpAPICallerFactory(stateFull ...bool) doubles.HTTPAPICaller {
+func httpAPICallerFactory(stateFull ...bool) support.HTTPAPICaller {
 	isStateFull := false
 	if len(stateFull) > 0 {
 		isStateFull = stateFull[0]

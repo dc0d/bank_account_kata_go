@@ -4,7 +4,7 @@ Personal notes on practicing [Bank Account Kata](https://github.com/sandromancus
 
 > Status: Parked 🚧
 >
-> _The focus goal here was only exploration and playing around with [IDD (Interaction-Driven Design)](https://codurance.com/2017/12/08/introducing-idd/) and mocks - no dedication to anything other than exploration and only sketches and drafts_.
+> _The focus goal here was only exploration and playing around with [IDD (Interaction-Driven Design)](https://codurance.com/2017/12/08/introducing-idd/) and proxy-based mocks - no dedication to anything other than exploration and only sketches and drafts_.
 
 ----
 
